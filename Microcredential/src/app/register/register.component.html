@@ -1,0 +1,32 @@
+
+    <div class="container pt-5 pb-5">
+    <div class="card rounded-0">
+        <div class="card-body">
+        <div style="text-align: center"><h3>Register Here</h3></div>
+        <form class="form">
+          <div class="form-group">
+            <b>First Name:</b>
+            <input type="text" name="fname" class="form-control" placeholder="First Name" [(ngModel)]="regiterUserData.fname" required>
+          </div>    
+          <div class="form-group">
+            <b>Last Name:</b>
+            <input type="text" name="lname" class="form-control" placeholder="Last Name" [(ngModel)]="regiterUserData.lname">
+          </div>
+          <div class="form-group">
+            <b>Email id:</b>
+            <input type="text" name="email"class="form-control" placeholder="Email" [(ngModel)]="regiterUserData.email" required>
+          </div>
+          <div class="form-group">
+            <b>Password:</b>
+            <input type="password" name="Password" class="form-control" placeholder="Password" [(ngModel)]="regiterUserData.password" required>
+          </div>
+          <div class="form-group">
+            <b>Confirm Password:</b>
+            <input type="password" name="Cpassword" class="form-control" placeholder="Re-Enter Password" [(ngModel)]="regiterUserData.Cpassword" required>
+          </div>
+          <input (click)="registerUser()" type="button" value="Register" class="btn btn-primary">  
+      </form> 
+      </div>
+    </div>
+  </div>
+
